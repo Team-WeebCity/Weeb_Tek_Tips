@@ -8,6 +8,9 @@
 ### How Do I install it?
 
 * Npm install
+
+### How do I run it to see the payload?
+
 * Npm start
 
 
