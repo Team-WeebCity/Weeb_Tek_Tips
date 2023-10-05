@@ -8,6 +8,8 @@
 * Npm start
 
 ### Dependencies 
+
+*express
 *chance
 *jest
 *socket.io
@@ -15,5 +17,3 @@
 
 ### UML 
 
-
-  

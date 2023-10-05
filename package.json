@@ -1,0 +1,20 @@
+{
+  "name": "weeb_tek_tips",
+  "version": "1.0.0",
+  "description": "* A basic application where a user (Customer) can create a service ticket that is then \"filtered\" through a Server (hub) where a service worker can see a ticket and troubleshoot problems that user is having specifically.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./Hub/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chance": "^1.1.11",
+    "dotenv": "^16.3.1",
+    "jest": "^29.7.0",
+    "socket.io": "^4.7.2",
+    "socket.io-client": "^4.7.2"
+  }
+}
