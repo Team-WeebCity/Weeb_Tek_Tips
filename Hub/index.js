@@ -9,18 +9,12 @@ let server = new Server(PORT);
 let weeb = server.of('/weeb');
 console.log('server on');
 
-socket.on('connect', function() {
+weeb.on('connect', function() {
     console.log('Connected to server');
 
-    //making the ticket
-    socket.emit('createTicket', {id: 1, description: 'Test ticket'});
+    socket.on('create', (payload) => {
+        console.log('Ticket has been created.', payload);
+        socket.broadcast.to(payload.name).emit('create', payload);
+      });
 });
 
-socket.on('newTicket', function(ticket) {
-    console.log('New ticket received: ', ticket);
-});
-
-socket.on('create', (payload) => {
-    console.log('Ticket has been created.', payload);
-    socket.broadcast.to(payload.name).emit('create', payload);
-  });

@@ -14,6 +14,8 @@
 *jest
 *socket.io
 *socket.io-client
+*dotenv
 
 ### UML 
 
+[UML](Weeb.png)
