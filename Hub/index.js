@@ -9,7 +9,7 @@ let server = new Server(PORT);
 let weeb = server.of('/weeb');
 console.log('server on');
 
-weeb.on('connect', function() {
+weeb.on('connect', function(socket) {
     console.log('Connected to server');
 
     socket.on('create', (payload) => {
